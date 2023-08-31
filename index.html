@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет пользователя</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <section class="new-lk">
+        <div class="container">
+            <div class="new-lk__wrapper">
+                <h1 class="new-lk__header new-h1">ЛИЧНЫЙ КАБИНЕТ пользователя</h1>
+                <nav class="new-lk__nav">
+                    <ul class="new-lk__nav-list">
+                        <li class="new-lk__nav-item"><a href="">Личная информация</a></li>
+                        <li class="new-lk__nav-item"><a href="">Отчеты об автомобилях</a></li>
+                        <li class="new-lk__nav-item"><a href="">Загрузить свое авто</a></li>
+                        <li class="new-lk__nav-item _active"><a href="">Договора и оплата</a></li>
+                    </ul>
+                </nav>
+
+                <div class="new-lk__alert">
+                    <img src="./assets/img/alert-icon.svg" alt="" class="new-lk__alert-icon">
+                    <span>Обращаем ваше внимание, что нажимая галочку в поле «Согласен с условием оферты» перед оплатой
+                        Договора, вы выражаете согласие с условиями Договора</span>
+                </div>
+
+                <div class="new-lk__table">
+                    <div class="new-lk__table-row --header">
+                        <span class="new-lk__text">Услуга</span>
+                        <span class="new-lk__text">Стоимость</span>
+                        <span class="new-lk__text">Дата оплаты</span>
+                        <span class="new-lk__text">Сумма и статус оплаты</span>
+                        <span class="new-lk__text">Файл</span>
+                    </div>
+
+                    <div class="new-lk__table-row">
+                        <span class="new-lk__text --name">
+                            <a href class="new-lk__table-name" data-document-modal data-document-name="test1" data-document-desc="desc1" data-document-text="Text test">Договор 12345</a>
+                            <span class="new-lk__table-desc">Подбор авто</span>
+                        </span>
+                        <span class="new-lk__text">25 000 руб.</span>
+                        <span class="new-lk__text">-</span>
+                        <span class="new-lk__text --status">
+                            <div class="status-val">
+                                Не оплачен
+                                <div class="new-lk__status">
+                                    <img src="./assets/img/info.svg" alt="">
+                                    <div class="new-lk__status-info">
+                                        Для оплаты - нажмите на номер договора в столбце «Услуга»
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="new-lk__text --download"><a href="" class="new-lk__download"><img
+                                    src="./assets/img/download.svg" alt="">Скачать</a></span>
+                    </div>
+
+                    <div class="new-lk__table-row">
+                        <span class="new-lk__text --name">
+                            <a href class="new-lk__table-name" data-document-modal>Договор 12345</a>
+                            <span class="new-lk__table-desc">Подбор авто</span>
+                        </span>
+                        <span class="new-lk__text">25 000 руб.</span>
+                        <span class="new-lk__text">-</span>
+                        <span class="new-lk__text --status">
+                            <span>60 000 руб.</span>
+                            <div class="status-val">
+                                Не оплачен
+                                <div class="new-lk__status">
+                                    <img src="./assets/img/info.svg" alt="">
+                                    <div class="new-lk__status-info">
+                                        Для оплаты - нажмите на номер договора в столбце «Услуга»
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="new-lk__text"></span>
+                    </div>
+
+                    <div class="new-lk__table-row">
+                        <span class="new-lk__text --name">
+                            <a href class="new-lk__table-name" data-document-modal>Договор 12345</a>
+                            <span class="new-lk__table-desc">Подбор авто</span>
+                        </span>
+                        <span class="new-lk__text">25 000 руб.</span>
+                        <span class="new-lk__text">-</span>
+                        <span class="new-lk__text --status">
+                            <span>60 000 руб.</span>
+                            <div class="status-val">
+                                Оплачен частично
+                                <div class="new-lk__status">
+                                    <img src="./assets/img/info.svg" alt="">
+                                    <div class="new-lk__status-info">
+                                        Для оплаты - нажмите на номер договора в столбце «Услуга»
+                                    </div>
+                                </div>
+                            </div>
+                        </span>
+                        <span class="new-lk__text"></span>
+                    </div>
+
+                    <div class="new-lk__table-row">
+                        <span class="new-lk__text --name">
+                            <a href class="new-lk__table-name" data-document-modal>Договор 12345</a>
+                            <span class="new-lk__table-desc">Подбор авто</span>
+                        </span>
+                        <span class="new-lk__text">25 000 руб.</span>
+                        <span class="new-lk__text">-</span>
+                        <span class="new-lk__text --status">
+                            <div class="status-val">
+                                Оплачен полностью
+                            </div>
+                        </span>
+                        <span class="new-lk__text --download"><a href="" class="new-lk__download"><img
+                                    src="./assets/img/download.svg" alt="">Скачать</a></span>
+                    </div>
+                </div>
+
+                <div class="new-lk__alert --wide">
+                    <span>Если у вас возникли вопросы или сложности при оплате, вы можете связаться с <a
+                            href="">технической поддержкой.</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="new-lk__overlay" data-document-close></div>
+    <div class="new-lk__modal">
+        <div class="new-lk__modal-wrapper">
+            <div class="new-lk__modal-controls">
+                <div class="new-lk__modal-expand"><img src="./assets/img/expand.svg" alt=""></div>
+                <div class="new-lk__modal-close" data-document-close><img src="./assets/img/close-icon.svg" alt=""></div>
+            </div>
+
+            <span class="new-lk__modal-message">
+                <img src="./assets/img/alert-icon.svg" alt="">
+                Проверьте полноту информации личных данных в договоре.
+            </span>
+
+            <div class="new-lk__modal-desc">
+                <h2 class="new-lk__modal-header new-h1">
+                    <span class="modal-name">Договор 12345</span>
+                    <span class="modal-desc">Подбор авто</span>
+                </h2>
+                <div class="new-lk__modal-text">
+                    <p>
+                        Наше дело не так однозначно, как может показаться: социально-экономическое развитие не оставляет
+                        шанса для инновационных методов управления процессами. Имеется спорная точка зрения, гласящая
+                        примерно следующее: действия представителей оппозиции, которые представляют собой яркий пример
+                        континентально-европейского типа политической культуры, будут объективно рассмотрены
+                        соответствующими инстанциями. Идейные соображения высшего порядка, а также укрепление и развитие
+                        внутренней структуры влечет за собой процесс внедрения и модернизации модели развития. Наше дело
+                        не так однозначно, как может показаться: социально-экономическое развитие не оставляет шанса для
+                        инновационных методов управления процессами. Имеется спорная точка зрения, гласящая примерно
+                        следующее: действия представителей оппозиции, которые представляют собой яркий пример
+                        континентально-европейского типа политической культуры, будут объективно рассмотрены
+                        соответствующими инстанциями. Идейные соображения высшего порядка, а также укрепление и развитие
+                        внутренней структуры влечет за собой процесс внедрения и модернизации модели развития. Наше дело
+                        не так однозначно, как может показаться: социально-экономическое развитие не оставляет шанса для
+                        инновационных методов управления процессами. Имеется спорная точка зрения, гласящая примерно
+                        следующее: действия представителей оппозиции, которые представляют собой яркий пример
+                        континентально-европейского типа политической культуры, будут объективно рассмотрены
+                        соответствующими инстанциями. Идейные соображения высшего порядка, а также укрепление и развитие
+                        внутренней структуры влечет за собой процесс внедрения и модернизации модели развития. Наше дело
+                        не так однозначно, как может показаться: социально-экономическое развитие не оставляет шанса для
+                        инновационных методов управления процессами. Имеется спорная точка зрения, гласящая примерно
+                        следующее: действия представителей оппозиции, которые представляют собой яркий пример
+                        континентально-европейского типа политической культуры, будут объективно рассмотрены
+                        соответствующими инстанциями.
+                        <br><br>
+                        Идейные соображения высшего порядка, а также укрепление и развитие
+                        внутренней структуры влечет за собой процесс внедрения и модернизации модели развития.Наше дело
+                        не так однозначно, как может показаться: социально-экономическое развитие не оставляет шанса для
+                        инновационных методов управления процессами. Имеется спорная точка зрения, гласящая примерно
+                        следующее: действия представителей оппозиции, которые представляют собой яркий пример
+                        континентально-европейского типа политической культуры, будут объективно рассмотрены
+                        соответствующими инстанциями.
+                        <br><br>
+                        Идейные соображения высшего порядка, а также укрепление и развитие
+                        внутренней структуры влечет за собой процесс внедрения и модернизации модели развития.Наше дело
+                        не так однозначно, как может показаться: социально-экономическое развитие не оставляет шанса для
+                        инновационных методов управления процессами. Имеется спорная точка зрения, гласящая примерно
+                        следующее: действия представителей оппозиции, которые представляют собой яркий пример
+                        континентально-европейского типа политической культуры, будут объективно рассмотрены
+                        соответствующими инстанциями. Идейные соображения высшего порядка, а также укрепление и
+                        развитие...
+                    </p>
+                </div>
+            </div>
+
+            <div class="new-lk__modal-bottom">
+                <label class="new-lk__modal-label">
+                    <input type="checkbox" class="new-lk__modal-check">
+                    <div class="new-lk__modal-custom-check"></div>
+                    <span>Обращаем ваше внимание, что нажимая галочку в поле «Согласен с условием оферты» перед оплатой
+                        Договора, вы выражаете согласие с условиями Договора, он считается подписанным и вступает в
+                        силу.</span>
+                </label>
+                <div class="new-lk__modal-btns">
+                    <a href="" class="new-lk__modal-save new-btn">СОХРАНИТЬ И ЗАКРЫТЬ</a>
+                    <a href="" class="new-lk__modal-checkout new-btn">ОПЛАТИТЬ</a>
+                </div>
+                <span class="new-lk__modal-message --epilog">
+                    <img src="./assets/img/alert-icon.svg" alt="">
+                    Договор подписан.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
