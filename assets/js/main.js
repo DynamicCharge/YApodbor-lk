@@ -54,4 +54,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
         
         $checkoutBtn.classList.toggle('_active');
     }
+
+    let expand = document.querySelector('.new-lk__modal-expand');
+    expand.onclick = function() {
+        let $modal = document.querySelector('.new-lk__modal');
+
+        $modal.classList.toggle('_expanded');
+    }
 });
