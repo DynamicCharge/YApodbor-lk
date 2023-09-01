@@ -191,6 +191,7 @@
     background: #fff;
     box-sizing: border-box;
     box-shadow: 0px 0px 20.32604px 0px rgba(71, 71, 71, 0.20);
+    z-index: 100;
 }
 .new-lk__status-info::before {
     content: '';
@@ -604,7 +605,7 @@
         pointer-events: none;
     }
     .new-lk__modal-text {
-        height: 34vh;
+        height: 37vh;
         position: relative;
     }
     .new-lk__modal {
