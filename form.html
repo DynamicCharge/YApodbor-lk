@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оплата</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/theme.min.css" integrity="sha512-hbs/7O+vqWZS49DulqH1n2lVtu63t3c3MTAn0oYMINS5aT8eIAbJGDXgLt6IxDHcWyzVTgf9XyzZ9iWyVQ7mCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <section class="new-graduation">
+        <div class="container --wide">
+            <div class="new-graduation__wrapper">
+                <h1 class="new-graduation__header new-h1">ЛИЧНЫЙ КАБИНЕТ специалиста</h1>
+
+                <nav class="new-lk__nav">
+                    <ul class="new-lk__nav-list">
+                        <li class="new-lk__nav-item"><a href="">Личная информация</a></li>
+                        <li class="new-lk__nav-item"><a href="">Отчеты об автомобилях</a></li>
+                        <li class="new-lk__nav-item"><a href="">Загрузить свое авто</a></li>
+                        <li class="new-lk__nav-item"><a href="">Договора и оплата</a></li>
+                        <li class="new-lk__nav-item _active"><a href="">Форма оценки</a></li>
+                    </ul>
+                </nav>
+
+                <span class="new-graduation-head new-h1">Форма оценки</span>
+
+                <div class="new-graduation-wrap">
+                    <form action="" class="new-graduation__form">
+                        <h2 class="new-graduation__subheader">Общая информация об автомобиле</h2>
+                        <div class="new-graduation__fields">
+                            <label class="new-graduation__label">
+                                <input type="text" name="vin-num" placeholder="Вин-номер" class="new-graduation__input">
+                            </label>
+                            <label class="new-graduation__select-wrap">
+                                <select name="brand" class="new-graduation__select">
+                                    <option value="Марка 1">Марка 1</option>
+                                    <option value="Марка 2">Марка 2</option>
+                                    <option value="Марка 3">Марка 3</option>
+                                </select>
+                            </label>
+                            <label class="new-graduation__select-wrap">
+                                <select name="model" class="new-graduation__select">
+                                    <option value="Модель 1">Модель 1</option>
+                                    <option value="Модель 2">Модель 2</option>
+                                    <option value="Модель 3">Модель 3</option>
+                                </select>
+                            </label>
+                            <label class="new-graduation__select-wrap">
+                                <select name="color" class="new-graduation__select">
+                                    <option value="Цвет 1">Цвет 1</option>
+                                    <option value="Цвет 2">Цвет 2</option>
+                                    <option value="Цвет 3">Цвет 3</option>
+                                </select>
+                            </label>
+                            <label class="new-graduation__label">
+                                <input type="text" name="volume" placeholder="Объем" class="new-graduation__input">
+                            </label>
+                            <label class="new-graduation__label">
+                                <input type="text" name="power" placeholder="Мощность" class="new-graduation__input">
+                            </label>
+                            <label class="new-graduation__select-wrap">
+                                <select name="transmisson" class="new-graduation__select">
+                                    <option value="Коробка передач 1">Коробка передач 1</option>
+                                    <option value="Коробка передач 2">Коробка передач 2</option>
+                                    <option value="Коробка передач 3">Коробка передач 3</option>
+                                </select>
+                            </label>
+                            <label class="new-graduation__label">
+                                <input type="text" name="keys" placeholder="Количество ключей" class="new-graduation__input">
+                            </label>
+                            <label class="new-graduation__label">
+                                <input type="text" name="year" placeholder="Год" class="new-graduation__input">
+                            </label>
+                            <label class="new-graduation__label">
+                                <input type="text" name="mileage" placeholder="Пробег" class="new-graduation__input">
+                            </label>
+                            <label class="new-graduation__select-wrap">
+                                <select name="body" class="new-graduation__select">
+                                    <option value="Тип кузова 1">Тип кузова 1</option>
+                                    <option value="Тип кузова 2">Тип кузова 2</option>
+                                    <option value="Тип кузова 3">Тип кузова 3</option>
+                                </select>
+                            </label>
+                            <label class="new-graduation__select-wrap">
+                                <select name="body" class="new-graduation__select">
+                                    <option value="Привод 1">Привод 1</option>
+                                    <option value="Привод 2">Привод 2</option>
+                                    <option value="Привод 3">Привод 3</option>
+                                </select>
+                            </label>
+                            <label class="new-graduation__label --textarea">
+                                <textarea name="comment" placeholder="Комментарии" rows="2" class="new-graduation__text"></textarea>
+                            </label>
+                        </div>
+
+                        <div class="new-graduation__form-img">
+                            <h2 class="new-graduation__subheader">Состав автомобиля</h2>
+                            <img src="./assets/img/plan.png" alt="">
+                        </div>
+
+                        <div class="new-graduation__form-bottom">
+                            <h2 class="new-graduation__subheader">Дефекты кузова</h2>
+                            <div class="new-graduation__form-table">
+                                <div class="new-graduation__form-table__row --header">
+                                    <span class="new-graduation__form-table__headline">Дефекты кузова</span>
+                                    <span class="new-graduation__form-table__headline">Был окрас/замена</span>
+                                    <span class="new-graduation__form-table__headline">Вид повреждения</span>
+                                    <span class="new-graduation__form-table__headline">Дефекты салона</span>
+                                    <span class="new-graduation__form-table__headline">Вид дефекта</span>
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Лобовое стекло</span>
+                                        Номер дефекта 1
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Переднее левое крыло</span>
+                                        Номер дефекта 2
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Передний бампер</span>
+                                        Номер дефекта 3
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Капот</span>
+                                        Номер дефекта 4
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Переднее правое крыло</span>
+                                        Номер дефекта 5
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Передняя правая дверь</span>
+                                        Номер дефекта 6
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Задняя правая дверь</span>
+                                        Номер дефекта 7
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Порог правый</span>
+                                        Номер дефекта 8
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Крыша</span>
+                                        Номер дефекта 9
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Правое заднее крыло</span>
+                                        Номер дефекта 10
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Бампер задний</span>
+                                        Номер дефекта 11
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Крыша багажника</span>
+                                        Номер дефекта 12
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Заднее левое крыло</span>
+                                        Номер дефекта 13
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Задняя правая дверь</span>
+                                        Номер дефекта 14
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Передняя левая дверь</span>
+                                        Номер дефекта 15
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Порог левый</span>
+                                        Номер дефекта 16
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                                <div class="new-graduation__form-table__row">
+                                    <span class="new-graduation__form-table__text">
+                                        <span>Колеса</span>
+                                        Номер дефекта 17
+                                    </span>
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                    <input type="text" class="new-graduation__form-table__field">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="new-graduation__form-controls">
+                            <button class="new-graduation__form-save new-btn">сохранить</button>
+                            <a href="" class="new-graduation__form-back new-btn">НАЗАД</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

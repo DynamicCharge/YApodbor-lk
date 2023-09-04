@@ -48,17 +48,28 @@ document.addEventListener("DOMContentLoaded", (event) => {
     }
 
     let check = document.querySelector('.new-lk__modal-check');
-    check.onchange = function() {
-        let $modal = document.querySelector('.new-lk__modal'),
-        $checkoutBtn = $modal.querySelector('.new-lk__modal-checkout');
-        
-        $checkoutBtn.classList.toggle('_active');
+    if(check){
+        check.onchange = function() {
+            let $modal = document.querySelector('.new-lk__modal'),
+            $checkoutBtn = $modal.querySelector('.new-lk__modal-checkout');
+            
+            $checkoutBtn.classList.toggle('_active');
+        }
     }
 
     let expand = document.querySelector('.new-lk__modal-expand');
-    expand.onclick = function() {
-        let $modal = document.querySelector('.new-lk__modal');
-
-        $modal.classList.toggle('_expanded');
+    if(expand){
+        expand.onclick = function() {
+            let $modal = document.querySelector('.new-lk__modal');
+    
+            $modal.classList.toggle('_expanded');
+        }        
     }
+
+
+    $('.new-graduation__select').each(function(){
+        let $this = $(this);
+
+        $this.selectmenu();
+    });
 });
