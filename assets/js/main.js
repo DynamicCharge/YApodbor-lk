@@ -72,4 +72,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
         $this.selectmenu();
     });
+
+    $('[data-num-only]').on('input', function() {
+        this.value = this.value.replace(/[^0-9]/g, '');        
+    });
 });
