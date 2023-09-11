@@ -702,6 +702,10 @@ textarea.new-graduation__text {
     cursor: pointer;
 }
 
+.ui-widget-content {
+    max-height: 120px;
+}
+
 @media screen and (max-width: 1175px) {
     .new-graduation__subheader {
         font-size: 20px;
